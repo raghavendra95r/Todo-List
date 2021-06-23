@@ -5,7 +5,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      items: [],
+      items: [], 
       input: '',
       isEditing: false,
       progress:0
@@ -88,7 +88,6 @@ class App extends Component {
           )
         }) : <p></p>
         }
-
         {this.state.isEditing ? <span className="todo-wrap" ><input onChange={this.onChange} value={this.state.input}/></span> : ""}
         
         <div id="add-todo" onClick={this.onEditing}><i className="fa fa-plus"></i> &nbsp; Add an Item</div>
